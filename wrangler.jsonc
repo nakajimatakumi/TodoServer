@@ -5,7 +5,14 @@
   "compatibility_date": "2025-04-24",
   "dev": {
     "ip": "0.0.0.0"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "D1",
+      "database_name": "todo",
+      "database_id": "e1744d0c-a890-47c3-95e8-9ad67d85e426"
+    }
+  ]
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -24,13 +31,7 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+
   // "ai": {
   //   "binding": "AI"
   // },
