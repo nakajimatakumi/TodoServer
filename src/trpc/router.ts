@@ -1,10 +1,14 @@
-import { initTRPC } from "@trpc/server";
-import { z } from "zod";
-
-const t = initTRPC.create();
+import { t } from "./trpc";
+import { userRouter } from "./routers/user";
+import { taskRouter } from "./routers/task";
+import { subtaskRouter } from "./routers/subtask";
+import { dashboardRouter } from "./routers/dashboard";
 
 export const appRouter = t.router({
-  test: t.procedure.query(() => "Hello"),
+  user: userRouter,
+  task: taskRouter,
+  subtask: subtaskRouter,
+  dashboard: dashboardRouter,
 });
 
 export type AppRouter = typeof appRouter;
